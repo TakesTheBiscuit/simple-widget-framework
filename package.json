@@ -8,7 +8,7 @@
     "test": "NODE_ENV=test karma start karma.config.js",
     "build:production": "NODE_ENV=production webpack -p --config webpack.production.config"
   },
-  "author": "",
+  "author": "josue@magicbell.io",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
