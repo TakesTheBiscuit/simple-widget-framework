@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "loose": true,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions"]
+      }
+    }]
+  ],
+  "plugins": [
+    ["transform-react-jsx", { "pragma":"h" }]
+  ]
+}
