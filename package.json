@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "NODE_ENV=development webpack-dashboard -- webpack-dev-server --open --config webpack.development.config",
+    "build:production": "NODE_ENV=production webpack -p --config webpack.production.config"
   },
   "author": "",
   "license": "ISC",
