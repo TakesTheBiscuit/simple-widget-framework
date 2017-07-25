@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My cool widget</title>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css">
+  <link rel="stylesheet" href="/app.magicwidget.css">
+</head>
+<body>
+  <br>
+  <br>
+  <div class="ui middle aligned stackable grid container">
+    <div class="ten wide column">
+      <h1>Quick Start</h1>
+      <p>Open your browser console and paste this code:</p>
+      <pre>
+        <code class="javascript" style="padding: 1.5rem">$(document).ready(function () {});</code>
+      </pre>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/app.magicwidget.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    hljs.initHighlightingOnLoad();
+  });
+  </script>
+</body>
+</html>
