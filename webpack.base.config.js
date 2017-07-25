@@ -9,7 +9,8 @@ const appCSSExtractor = new ExtractTextPlugin('app.magicwidget.css');
 
 module.exports = {
   entry: {
-    app: './src/js/app.js'
+    app: './src/js/app.js',
+    widget: './src/js/widget.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
