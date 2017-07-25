@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const iframeHTMLExtractor = new ExtractTextPlugin('iframe.html');
 const appCSSExtractor = new ExtractTextPlugin('app.magicwidget.css');
 
 
@@ -36,6 +37,9 @@ module.exports = {
         ]
       }),
       include: /\/src\/css/
+    },{
+      test: path.resolve(path.join(__dirname, 'src', 'html', 'iframe.html')),
+      loader: iframeHTMLExtractor.extract('html-loader?interpolate')
     }]
   },
   plugins: [
