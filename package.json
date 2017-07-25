@@ -30,6 +30,7 @@
     "karma-webpack": "^2.0.4",
     "mocha": "^3.4.2",
     "node-sass": "^4.5.3",
+    "preact-render-spy": "^1.0.0-rc.8",
     "sass-loader": "^6.0.6",
     "sinon": "^2.3.8",
     "webpack": "^2.7.0",
