@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dashboard -- webpack-dev-server --open --config webpack.development.config",
+    "test": "NODE_ENV=test karma start karma.config.js",
     "build:production": "NODE_ENV=production webpack -p --config webpack.production.config"
   },
   "author": "",
