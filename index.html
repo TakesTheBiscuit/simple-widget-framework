@@ -15,8 +15,19 @@
       <h1>Quick Start</h1>
       <p>Open your browser console and paste this code:</p>
       <pre>
-        <code class="javascript" style="padding: 1.5rem">$(document).ready(function () {});</code>
+        <code class="javascript" style="padding: 1.5rem">var options = {
+  target: '#widget-wrapper',
+  model: {
+    text: 'Officia reprehenderit ut culpa fugiat.'
+  }
+};
+MagicWidget.run(options);
+</code>
       </pre>
+    </div>
+    <div class="ten wide column">
+      <h1>Result</h1>
+      <div id="widget-wrapper"></div>
     </div>
   </div>
 
