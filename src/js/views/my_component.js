@@ -6,6 +6,7 @@ export default class MyComponent extends Component {
     return (
       <div>
         <p>{model.text}</p>
+        <p>FISH_ID: {model.fish}</p>
       </div>
     );
   }

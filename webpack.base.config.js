@@ -19,6 +19,15 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+
+  devServer: {
+    host: "0.0.0.0",
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+  },
+
   resolve: {
     alias: {
       '~': path.resolve(path.join(__dirname, 'src', 'js'))
