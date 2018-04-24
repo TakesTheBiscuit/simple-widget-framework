@@ -2,9 +2,14 @@
 <html>
 <head>
   <style type="text/css">
-    html,
-    body{ height: 100%; overflow: hidden; }
+    /*html,
+    body{ height: 100%; overflow: hidden; }*/
+
+    /* desperately needs a reset */
   </style>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+  <link rel="stylesheet" href="/app.magicwidget.css">
+
 
   <script type="text/javascript">
   /**
@@ -18,25 +23,14 @@
 </head>
 <body>
 
-  <!-- need a way to pull these values from the host page over the postmate handshake to instantiate the widget -->
+  <!-- @todo still need to hook these values from parent -->
   <script type="text/javascript"
     src="/app.magicwidget.js"
     data-rcName="MagicWidget1"
-    data-rcTarget="body"
+    data-rcTargetz="#somediv"
     data-rcKey="xx1KtIshFeQd4XMUh"
-    data-rcStyle="pop">
-  </script>
+    data-rcStyle="pop"></script>
+  
 
-  <script>
-    const handshake = new Postmate.Model({
-      // Expose your model to the Parent. Property values may be functions, promises, or regular values
-      height: () => document.height || document.body.offsetHeight
-    });
-
-    // When parent <-> child handshake is complete, events may be emitted to the parent
-    handshake.then(parent => {
-      parent.emit('some-event', 'Hello, World!');
-    });
-  </script>
 </body>
 </html>

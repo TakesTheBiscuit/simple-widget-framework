@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My cool widget</title>
+  <title> widget embed</title>
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night.min.css">
-  <link rel="stylesheet" href="/app.magicwidget.css">
+
+
+
+
 </head>
 <body>
   <br>
   <br>
   <div class="ui middle aligned stackable grid container">
     <div class="ten wide column">
-      <h1>Quick Start</h1>
-      <p>Open your browser console and paste this code:</p>
-      <pre>
-        <code class="javascript" style="padding: 1.5rem">var options = {
-  target: '#widget-wrapper',
-  model: {
-    text: 'Officia reprehenderit ut culpa fugiat.'
-  }
-};
-MagicWidget.run(options);
-</code>
-      </pre>
+      <h1> website</h1>
     </div>
+
     <div class="ten wide column">
-      <h1>Result</h1>
-
+      <h2>Widgetised</h2>
       <div id="midget-rapper"></div>
-
-
     </div>
+
   </div>
 
   <script type="text/javascript"
     src="/app.magicwidget.js"
-    data-name="MagicWidget1"
-    data-key="xx3SCoBOKtIshFeQd4XMUh"
-    data-fish="xx1KtIshFeQd4XMUh">
+    data-rcName="MagicWidget1"
+    data-rcTargetz="#midget-rapper"
+    data-rcKey="xx1KtIshFeQd4XMUh"
+    data-rcStyle="pop">
   </script>
 
+  <h2>OR</h2>
+  <div id="deep-embed" style="background:red;color:white;padding:20px;margin:20px auto;"></div>
 
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     hljs.initHighlightingOnLoad();
-
-
-    // demo inline
+/*
     var options = {
-      target: '#midget-rapper',
-      model: {
-        text: 'Officia reprehenderit ut culpa fugsiat.'
-      }
-    };
-    MagicWidget.run(options);
+        rcTarget: '#deep-embed',
+        rcKey: 'xx1KtIshFeQd4XMUh',
+        rcStyle: 'embed',
+        model: {
+          text: 'Embedded directly into the page using some more advanced Javascript aimed at developers or small websites'
+        }
+      };
+      MagicWidget.show(options);*/
+    /* 
+      inline/js invocation
+      var options = {
+        rcTarget: '#midget-rapper',
+        model: {
+          text: 'Officia reprehenderit ut culpa fugsiat.'
+        }
+      };
+      MagicWidget.run(options);
+    */
 
   });
   </script>
